@@ -1,0 +1,64 @@
+{
+  "name": "maxke",
+  "version": "0.1.0",
+  "private": true,
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:beta": "vue-cli-service build --mode beta",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "await-to-js": "^3.0.0",
+    "axios": "^1.4.0",
+    "clipboard": "^2.0.11",
+    "core-js": "^3.8.3",
+    "csv-parse": "^5.4.0",
+    "dayjs": "^1.11.9",
+    "echarts": "^5.4.3",
+    "element-ui": "^2.15.6",
+    "file-saver": "^2.0.5",
+    "js-file-download": "^0.4.12",
+    "nprogress": "^0.2.0",
+    "papaparse": "^5.4.1",
+    "qrcode.vue": "1.7.0",
+    "querystring": "^0.2.1",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "vue": "^2.6.14",
+    "vue-i18n": "^8.28.2",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "less": "^4.0.0",
+    "less-loader": "^8.0.0",
+    "lint-staged": "^13.2.3",
+    "prettier": "^2.4.1",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

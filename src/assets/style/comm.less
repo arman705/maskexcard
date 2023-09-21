@@ -1,0 +1,55 @@
+/* 公共样式 */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+i {
+  font-style: normal;
+}
+body {
+  background-color: @bg-color;
+  color: #606060;
+  font-size: 14px;
+  font-family: "PingFang SC-Medium, PingFang SC, sans-serif";
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgba(0, 189, 161, 0.8);
+  transition: color 0.2s ease;
+}
+.color-dart{
+  color: #15192A;
+}
+.email-code {
+  position: relative;
+  .el-input__suffix {
+    display: none;
+  }
+}
+// 进度条
+#nprogress{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  .bar {
+    height: 3px;
+    background-color: @primary;
+  }
+  
+}
